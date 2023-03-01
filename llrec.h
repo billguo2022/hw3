@@ -100,6 +100,7 @@ Node* llfilter(Node* head, Comp pred)
     }
     
     if(pred(head->val)==true){
+				delete head;
         z = llfilter(s, pred);//get rid of s
      
         return z;
